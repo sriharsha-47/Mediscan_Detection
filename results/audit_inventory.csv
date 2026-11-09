@@ -1,0 +1,5 @@
+orig_split,NORMAL,PNEUMONIA,total
+test,234,390,624
+train,1341,3875,5216
+val,8,8,16
+ALL,1583,4273,5856

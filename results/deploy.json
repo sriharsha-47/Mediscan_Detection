@@ -1,0 +1,8 @@
+{
+ "median_ms": 128.03409999469295,
+ "p95_ms": 138.366325001698,
+ "size_mb": 1.05305,
+ "device": "cpu",
+ "meets_200ms": true,
+ "meets_25MB": true
+}

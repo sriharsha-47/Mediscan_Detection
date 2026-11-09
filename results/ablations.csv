@@ -1,0 +1,55 @@
+ablation,split,metric,reference,variant,delta,spread,verdict
+D1 residual connections REMOVED,val,roc_auc,0.993,0.991,-0.002,±0.002,worse
+D1 residual connections REMOVED,val,pr_auc,0.996,0.995,-0.000,±0.002,INSIDE NOISE
+D1 residual connections REMOVED,val,bal_acc,0.966,0.947,-0.019,±0.016,worse
+D1 residual connections REMOVED,test,roc_auc,0.988,0.985,-0.004,±0.001,worse
+D1 residual connections REMOVED,test,pr_auc,0.996,0.994,-0.001,±0.001,worse
+D1 residual connections REMOVED,test,bal_acc,0.945,0.932,-0.013,±0.007,worse
+D2 squeeze-excitation REMOVED,val,roc_auc,0.993,0.992,-0.001,±0.002,INSIDE NOISE
+D2 squeeze-excitation REMOVED,val,pr_auc,0.996,0.996,+0.000,±0.002,INSIDE NOISE
+D2 squeeze-excitation REMOVED,val,bal_acc,0.966,0.959,-0.007,±0.006,worse
+D2 squeeze-excitation REMOVED,test,roc_auc,0.988,0.988,+0.000,±0.001,INSIDE NOISE
+D2 squeeze-excitation REMOVED,test,pr_auc,0.996,0.996,+0.000,±0.000,INSIDE NOISE
+D2 squeeze-excitation REMOVED,test,bal_acc,0.945,0.944,-0.001,±0.009,INSIDE NOISE
+metadata branch ADDED (two-branch),val,roc_auc,0.993,0.994,+0.001,±0.002,INSIDE NOISE
+metadata branch ADDED (two-branch),val,pr_auc,0.996,0.997,+0.001,±0.002,INSIDE NOISE
+metadata branch ADDED (two-branch),val,bal_acc,0.966,0.964,-0.002,±0.007,INSIDE NOISE
+metadata branch ADDED (two-branch),test,roc_auc,0.988,0.990,+0.002,±0.002,INSIDE NOISE
+metadata branch ADDED (two-branch),test,pr_auc,0.996,0.996,+0.001,±0.001,INSIDE NOISE
+metadata branch ADDED (two-branch),test,bal_acc,0.945,0.949,+0.004,±0.009,INSIDE NOISE
+input resolution 224 -> 96,val,roc_auc,0.993,0.992,-0.001,±0.002,INSIDE NOISE
+input resolution 224 -> 96,val,pr_auc,0.996,0.997,+0.001,±0.002,INSIDE NOISE
+input resolution 224 -> 96,val,bal_acc,0.966,0.961,-0.005,±0.007,INSIDE NOISE
+input resolution 224 -> 96,test,roc_auc,0.988,0.985,-0.003,±0.003,worse
+input resolution 224 -> 96,test,pr_auc,0.996,0.994,-0.001,±0.001,INSIDE NOISE
+input resolution 224 -> 96,test,bal_acc,0.945,0.934,-0.012,±0.006,worse
+augmentation safe -> none,val,roc_auc,0.993,0.991,-0.002,±0.002,INSIDE NOISE
+augmentation safe -> none,val,pr_auc,0.996,0.996,+0.001,±0.002,INSIDE NOISE
+augmentation safe -> none,val,bal_acc,0.966,0.952,-0.014,±0.007,worse
+augmentation safe -> none,test,roc_auc,0.988,0.982,-0.006,±0.001,worse
+augmentation safe -> none,test,pr_auc,0.996,0.993,-0.003,±0.001,worse
+augmentation safe -> none,test,bal_acc,0.945,0.934,-0.011,±0.008,worse
+augmentation safe -> naive (with horizontal flip),val,roc_auc,0.993,0.992,-0.001,±0.002,INSIDE NOISE
+augmentation safe -> naive (with horizontal flip),val,pr_auc,0.996,0.995,-0.000,±0.002,INSIDE NOISE
+augmentation safe -> naive (with horizontal flip),val,bal_acc,0.966,0.958,-0.008,±0.008,INSIDE NOISE
+augmentation safe -> naive (with horizontal flip),test,roc_auc,0.988,0.988,+0.000,±0.002,INSIDE NOISE
+augmentation safe -> naive (with horizontal flip),test,pr_auc,0.996,0.996,+0.000,±0.001,INSIDE NOISE
+augmentation safe -> naive (with horizontal flip),test,bal_acc,0.945,0.946,+0.001,±0.007,INSIDE NOISE
+ResNet18 (pretrained) vs ArogyaNet,val,roc_auc,0.998,0.993,-0.005,±0.002,worse
+ResNet18 (pretrained) vs ArogyaNet,val,pr_auc,0.999,0.996,-0.004,±0.002,worse
+ResNet18 (pretrained) vs ArogyaNet,val,bal_acc,0.977,0.966,-0.011,±0.007,worse
+ResNet18 (pretrained) vs ArogyaNet,test,roc_auc,0.995,0.988,-0.007,±0.001,worse
+ResNet18 (pretrained) vs ArogyaNet,test,pr_auc,0.998,0.996,-0.003,±0.000,worse
+ResNet18 (pretrained) vs ArogyaNet,test,bal_acc,0.968,0.945,-0.022,±0.009,worse
+class weights (training-side treatment),val,roc_auc,0.993,0.990,-0.003,±0.003,INSIDE NOISE
+class weights (training-side treatment),val,pr_auc,0.996,0.995,-0.001,±0.001,INSIDE NOISE
+class weights (training-side treatment),val,bal_acc,0.969,0.955,-0.014,±0.014,worse
+class weights (training-side treatment),test,roc_auc,0.989,0.984,-0.005,±0.004,worse
+class weights (training-side treatment),test,pr_auc,0.996,0.994,-0.002,±0.001,worse
+class weights (training-side treatment),test,bal_acc,0.953,0.933,-0.020,±0.014,worse
+CLAHE preprocessing (internal data),val,roc_auc,0.993,0.994,+0.001,±0.001,better
+CLAHE preprocessing (internal data),val,pr_auc,0.996,0.997,+0.001,±0.000,better
+CLAHE preprocessing (internal data),val,bal_acc,0.969,0.963,-0.006,±0.006,worse
+CLAHE preprocessing (internal data),test,roc_auc,0.989,0.989,+0.000,±0.001,INSIDE NOISE
+CLAHE preprocessing (internal data),test,pr_auc,0.996,0.996,-0.000,±0.001,INSIDE NOISE
+CLAHE preprocessing (internal data),test,bal_acc,0.953,0.950,-0.003,±0.004,INSIDE NOISE

@@ -1,0 +1,4 @@
+seed,weight_rel_L2_distance,val_AUC_plain,val_AUC_weighted,mean_prob_plain,mean_prob_weighted,spearman_val_probs,test_spec_at_95sens_threshold_moved,test_sens_at_95,test_spec_at_95sens_weighted,test_sens_w
+0,0.2511,0.9939,0.9872,0.716,0.7105,0.9114,0.9735,0.9067,0.9204,0.9231
+1,0.2453,0.9924,0.9921,0.7185,0.7049,0.9676,0.969,0.928,0.9558,0.9231
+2,0.2849,0.9925,0.9919,0.7241,0.7132,0.9504,0.9425,0.9394,0.9646,0.9133

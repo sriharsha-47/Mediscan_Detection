@@ -1,0 +1,6 @@
+data/
+data_fake/
+.venv/
+.cache/
+__pycache__/
+*.pyc
